@@ -15,6 +15,7 @@ body
 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     color: rgb(0, 0, 0);
+    font-size: 0.85em;
     padding-left: 3%;
     padding-right: 3%;  
 }
@@ -22,7 +23,10 @@ a{
     text-decoration: none;
     color: rgb(0, 0, 0);;
 }
-
+h1{
+    font-size: 1em;
+    font-weight: bold;
+}
 /* header */
 header
 {
@@ -30,23 +34,38 @@ header
     margin : auto;
     align-items: center;
     justify-content: space-between;
-
+    height: 50px;
+    font-size: 0.85em;
 }
 /* menu */
-nav{
-    width:40%;
+header#desktop nav{
+    height : 100%;
+    width:50%;
+    
 }
-nav ul{
-    display: flex;
+header#desktop nav ul{
+    display: flex;    
+    height : 100%;
 }
-nav ul li
+header#desktop nav ul li
 {
-    text-align: center;
+    display:flex; 
+    height : 100%;
     width: 33.3%;
-    padding-left: 5%;
-    padding-right: 5%;   
+    align-items: center;
+    justify-content: center;
 }
-nav ul li#sign_up a{
+
+header#desktop nav ul li:nth-child(1):hover, header#desktop nav ul li:nth-child(2):hover{
+    box-sizing: border-box;
+    border-top: 1px solid #0065FC;
+    color: #0065FC;
+}
+header#desktop nav ul li#sign_up a, header#desktop nav ul li:hover a{
     font-weight: bold;
     color: #0065FC;
+}
+
+header#mobile{
+    display: none;
 }

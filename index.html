@@ -6,24 +6,49 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="src/reset.css" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/mobile.css" media="only screen and (max-width:768px)"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 <body>
-    <header>
+    <!-- Header Desktop version -->
+    <header id="desktop">
         <img id='logo_reservia' src='src/img/reservia_logo.svg' alt='Reservia logo'>
         <nav>
-            <ul>
-                <li><a href='#hosting'>Hébergement</a></li>
-                <li><a href='#activities'>Activités</a></li>
-                <li id='sign_up'><a>S'inscrire</a></li>                
+            <ul>                
+                <li><a href='#activities'>Activités</a></li>    
+                <li><a href='#hosting'>Hébergements</a></li>
+                <li id='sign_up'><a>S'inscrire</a></li>
             </ul>      
-        </nav>
-        
-        
+        </nav>              
     </header>
+    <!-- End Header Desktop version -->
+    <!-- Header mobile version -->
+    <header id="mobile">
+        <div id="top-header">
+            <ul>
+                <li><img id='logo_reservia' src='src/img/reservia_logo.svg' alt='Reservia logo'></li>
+                <li id='sign_up'><a>S'inscrire</a></li>
+            </ul>  
+        </div>  
+        <nav>
+            <ul>
+                <li><a href='#activities'>Activités</a></li>    
+                <li><a href='#hosting'>Hébergements</a></li>
+            </ul>      
+        </nav>              
+    </header>
+    <!-- End Header mobile version -->
     <section id='search'>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+        <div id=search-engine>
+            <img id=icon>
+            <input type="text">
+            <input type='button'>
+            
+        </div>
 
     </section>
     <section id='hosting'>
