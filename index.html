@@ -13,48 +13,49 @@
 </head>
 
 <body>
-    <!-- Header Desktop version -->
-    <header id="desktop">
-        <img id='logo_reservia' src='src/img/reservia_logo.svg' alt='Reservia logo'>
-        <nav>
-            <ul>
-                <li><a href='#activities'>Activités</a></li>
-                <li><a href='#accommodations'>Hébergements</a></li>
-                <li id='sign_up'><a>S'inscrire</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- End Header Desktop version -->
-    <!-- Header mobile version -->
-    <header id="mobile">
-        <div id="top-header">
-            <ul>
-                <li><img id='logo_reservia' src='src/img/reservia_logo.svg' alt='Reservia logo'></li>
-                <li id='sign_up'><a>S'inscrire</a></li>
-            </ul>
-        </div>
-        <nav>
-            <ul>
-                <li><a href='#activities'>Activités</a></li>
-                <li><a href='#accommodations'>Hébergements</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- End Header mobile version -->
-    <section id='search'>
-        <h1 class="margin-top-20px">Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p class="margin-top-20px">En plein centre ville ou en pleine nature</p>
-        <div id=search-engine class="margin-top-20px">
-            <form name="search-engine" method="get" >
-                <button type='button' id="location"><i class="fas fa-map-marker-alt"></i></button>
-                <input type="text" placeholder="Marseille,France" > 
-                <button type='button' id="submit-search">Rechercher</button>
-                <!--Button Mobile version -->
-                <button type='button' id="submit-search-icon"><i class="fas fa-search"></i></button>
-            </form>
-        </div>
-        <div id=filters>
-            <h2>Filtres</h2>
+    <div id="page-reservia">
+        <!-- Header Desktop version -->
+        <header id="desktop">
+            <img id='logo_reservia' src='src/img/reservia_logo.svg' alt='Reservia logo'>
+            <nav>
+                <ul>
+                    <li><a href='#activities'>Activités</a></li>
+                    <li><a href='#accommodations'>Hébergements</a></li>
+                    <li id='sign_up'><a>S'inscrire</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- End Header Desktop version -->
+        <!-- Header mobile version -->
+        <header id="mobile">
+            <div id="top-header">
+                <ul>
+                    <li><img id='logo_reservia' src='src/img/reservia_logo.svg' alt='Reservia logo'></li>
+                    <li id='sign_up'><a href="#">S'inscrire</a></li>
+                </ul>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href='#activities'>Activités</a></li>
+                    <li><a href='#accommodations'>Hébergements</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- End Header mobile version -->
+        <section id='search'>
+            <h1 class="margin-top-20px">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p class="margin-top-20px">En plein centre ville ou en pleine nature</p>
+            <div id=search-engine class="margin-top-20px">
+                <form name="search-engine" method="get">
+                    <button type='button' id="location"><i class="fas fa-map-marker-alt"></i></button>
+                    <input type="text" placeholder="Marseille,France">
+                    <button type='button' id="submit-search">Rechercher</button>
+                    <!--Button Mobile version -->
+                    <button type='button' id="submit-search-icon"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div id=filters>
+                <h2>Filtres</h2>
                 <ul>
                     <li>
                         <i class="fas fa-money-bill-wave"></i>
@@ -73,22 +74,91 @@
                         <button>Animaux autorisés</button>
                     </li>
                 </ul>
-        </div>
-        <div id="info" class="margin-top-20px">
-            <div id='i-border'><i class="fas fa-info"></i></div>
-            <p >Plus de 500 logements sont disponibles dans cette ville</p>
-        </div>  
-    </section>
-    <section id='accommodations'>
-        <div id="marseille-accommodations"></div>
-        <div id="popular-accommodations"></div>
-    </section>
-    <section id='activities'>
+            </div>
+            <div id="info" class="margin-top-20px">
+                <div id='i-border'><i class="fas fa-info"></i></div>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </section>
+        <section id='accommodations'>
+            <div id="marseille-accommodations"></div>
+            <div id="popular-accommodations"></div>
+        </section>
+        <section id='activities'>
+            <h1 class="margin-top-20px">Activités à Marseille</h1>
+            <div id="activities-grid" class="margin-top-20px">
+                <div class="activity">
+                    <div class="activity-img"><a href="#"><img
+                                src="src/img/activities/medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                                rel="Vieux Port medium img" class="medium-img">
+                            <img src="src/img/activities/small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                                rel="Vieux Port small img" class="small-img">
+                        </a></div>
+                    <a href="#">
+                        <div class="activity-title">
+                            <h3>Vieux Port</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="activity">
+                    <div class="activity-img"><a href="#"><img
+                                src="src/img/activities/small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                                rel="Fort de Pomègues img" class="small-img"></a></div>
+                    <a href="#">
+                        <div class="activity-title">
+                            <h3>Fort de Pomègues</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="activity">
+                    <div class="activity-img"><a href="#">
+                            <img src="src/img/activities/medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                                rel="Parc National des Calanques medium img" class="medium-img">
+                            <img src="src/img/activities/small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                                rel="Parc National des Calanques small img" class="small-img">
+                        </a></div>
+                    <a href="#">
+                        <div class="activity-title">
+                            <h3>Parc National des Calanques</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="activity">
+                    <div class="activity-img"><a href="#"><img
+                                src="src/img/activities/small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                rel="Notre-Dame-de-la-Garde img" class="small-img"></a></div>
+                    <a href="#">
+                        <div class="activity-title">
+                            <h3>Notre-Dame-de-la-Garde</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="activity">
+                    <div class="activity-img"><a href="#"><img
+                                src="src/img/activities/small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                                rel="Îles du frioul img" class="small-img"></a></div>
+                    <a href="#">
+                        <div class="activity-title">
+                            <h3>Îles du frioul</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="activity">
+                    <div class="activity-img"><a href="#"><img
+                                src="src/img/activities/small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                                rel="Parc Longchamp img" class="small-img"></a></div>
+                    <a href="#">
+                        <div class="activity-title">
+                            <h3>Parc Longchamp</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer>
 
-    </section>
-    <footer>
-
-    </footer>
+        </footer>
+    </div>
 </body>
 
 </html>
