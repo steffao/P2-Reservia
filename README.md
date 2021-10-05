@@ -1,30 +1,27 @@
 # Reservia
-Deuxième projet du parcours développeur web chez OpenClassrooms.
-L'objectif est d'intégrer la maquette d'un site de planification de vacance nommé "Reservia" (voir l'image ci-dessous).
+Reservia is the second project of the Web Developer training by OpenClassrooms.
+This project involves making the integration of a Vacation booking website called Reservia.
+You can access the page via the following link (Google Chrome only) : https://steffao.github.io/reservia/
 
 ![maquette web reservia](./docs/desktop.png)
 
-## Éléments fournis par l'entreprise virtuelle.
-- La maquette pour les résolutions ordinateur et téléphone nous est donné.
-- Toutes les images présentes sur le site sont aussi livrés en format sm, md, l & xl.
-- Les icones proviennent de [Font Awesome](https://fontawesome.com/)
-- Les couleurs sont : bleu #0065FC - bleu clair #DEEBFF - gris #F2F2F2
-- La police est ["Raleway"](https://fonts.google.com/specimen/Raleway)
+## Elements provided by the virtual company
+- Desktop & Mobile versions' mock-ups have been provided beforehand.
+- The mock-up pictures have been delivered in sm, md, l & xl format
+- The icons come from [Font Awesome](https://fontawesome.com/)
+- The colors used are : blue #0065FC - light blue #DEEBFF - grey #F2F2F2
+- The font used is ["Raleway"](https://fonts.google.com/specimen/Raleway)
 
-## Cahier des charges
-- L'integration doit se faire en HTML5 & CSS3, sans framework (bootstrap par exemple)
-- Le champ de recherche doit être un champ de saisie, dont le texte peut être édité. La fonctionnalité de recherche ne doit pas être implémenté pour autant.
-- Chaque carte d’hébergement ou d’activité devra être cliquable dans son intégralité. Pour l’instant les liens seront vides.
-- Les filtres, bien que non fonctionnels, doivent changer de style au survol.
-- Dans le menu, les liens “Hébergements” et “Activités” sont des ancres qui doivent mener aux sections de la page.
-- Même si aucune maquette pour la résolution tablette n'est fournis, l'intégration doit la prendre en charge.
-- Les images doivent être de taille adéquate afin qu'elle soit le plus jolie possible en impactant le moins possible le temps de chargement de la page.
-- Le code devra utiliser les balises sémantiques et ne doit contenir aucune erreur ni alerte au validateur W3C HTML et CSS.
-- Le site devra être compatible avec les dernières versions de Chrome et Firefox.
-- Le HTML et le CSS doivent être séparés et le dossier doit être organisé
-- Le code doit être versionné avec git et doit avoir un repo distant sur Github ou Gitlab
-
-## Notes sur la réalisation du projet
-- L'integration est faite sur l'éditeur Visual Studio Code avec les plugins [Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) & [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph). Le thème, l'UI et les raccourcis clavier sont personnalisés.
-- [Sass](https://sass-lang.com/) est utilisé pour organiser le css. Vous trouverez le fichier sass est dans le repository (/style)
+## Specifications
+- The integration has to be done with HTML5 & CSS3, without using any framework (for example Bootstrap)
+- The field bar must be an input bar, in which a text can be edited. Although the search feature cannot be implemented.
+- Every accommodation & activity card must be entirely clickable. For now, their link is not accessible.
+- Hover effects must be displayed over the filters, despite that it is not working.
+- In the menu bar, “Hébergements” and “Activités” are anchors that must goes to their respective page section.
+- Even if, no Tablet-format mock-up has been delivered, you have to consider this integration.
+- The images must have fitting dimensions to be as nice as possible while affecting thee load time as little as possible.
+- The code will be using semantic HTML tags and will not contains any error or alert in the W3C Markup Validation Service.
+- The site will have to be compatible with the last versions of Chrome and Firefox.
+- HTML and CSS must be split and the folder must be organised.
+- The code must be versioned with Git and have a remote depository in Github ou Gitlab.
 
