@@ -13,10 +13,14 @@ a{
 header#mobile{
     display: initial;
 }
-header#mobile div#top-header,section#search,footer{
+header#mobile div#top-header,section#search,section#activities,footer{
 
     padding-right: 3%;
     padding-left: 3%;
+}
+section#accommodations{
+    padding-left: unset;
+    padding-right: unset;
 }
 header#mobile div#top-header ul{
     
@@ -55,8 +59,9 @@ header#mobile nav ul li{
 header#mobile nav ul li:hover{
     box-sizing: border-box;
     border-bottom: 3px solid #0065FC;
+    
 }
-header#mobile div#top-header ul li#sign_up a, header#mobile nav ul li:hover a{
+header#mobile nav ul li:hover a{
     color:#0065FC ;
     font-weight: bold;
 }
@@ -115,10 +120,73 @@ section#accommodations {
 section#accommodations > div {
     border-radius: unset;
 }
-#accommodations > div:nth-of-type(2) {
-    order: 1;
+@media screen and (max-width:375px) /*Mobile M dimensions*/ {
+    section#accommodations > div {
+        padding: 10px;
+    }
+}
+
+#accommodations #marseille-accommodations{
+    background-color: white;
+}
+#accommodations #popular-accommodations{
+    /*Popular accomodations goes above Marseille accommodations (see mock-up)*/
+    grid-column-start: 1;
+    grid-row-start: 1;
   }
 
+/*Images dimension*/
+/*nth-child (1)Auberge la Cannebière (2)Hôtel du port (3)Hôtel les Mouettes 
+(4)Hôtel de la mer (5)Auberge le Panier (6)Hôtel chez Amina*/
+
+
+#accommodations-grid .accommodation:nth-child(2) .accommodation-img img{
+    transform:initial;
+}
+#accommodations-grid .accommodation:nth-child(3) .accommodation-img img{
+    transform:translateY(-50px)
+}
+#accommodations-grid .accommodation:nth-child(4) .accommodation-img img{
+    transform:translateY(-95px)
+}
+#accommodations-grid .accommodation:nth-child(5) .accommodation-img img{
+    transform:translateY(-30px)
+}
+#accommodations-grid .accommodation:nth-child(6) .accommodation-img img{
+    transform:translateY(-180px)
+}
+
+@media screen and (max-width:560px){
+    /*All the accomodations cards are aligned in 1 single column*/
+    #accommodations-grid{
+        grid-template-rows: unset;
+    }
+    #accommodations-grid .accommodation .accommodation-title {
+        min-height: 60px
+    }
+    #accommodations-grid .accommodation:nth-child(2) .accommodation-img img{
+        transform:translateY(-60px)
+    }
+    #accommodations-grid .accommodation:nth-child(4) .accommodation-img img{
+        transform:translateY(-130px)
+    }
+    #accommodations-grid .accommodation:nth-child(6) .accommodation-img img{
+        transform:translateY(-268px)
+    }
+}
+@media screen and (max-width:485px){
+    /*All the accomodations cards are aligned in 1 single column*/
+    #accommodations-grid .accommodation:nth-child(2) .accommodation-img img{
+        transform:translateY(-60px)
+    }
+    #accommodations-grid .accommodation:nth-child(4) .accommodation-img img{
+        transform:translateY(-130px)
+    }
+    #accommodations-grid .accommodation:nth-child(6) .accommodation-img img{
+        transform:translateY(-230px)
+    }
+
+}
 /*Activities*/
 /* :nth-child (1)Vieux Port (2)Fort de Pomègues (3)Parc Nat Calanques 
 (4)ND de la Garde (5)Iles du Frioul (6)Parc Longchamp*/
@@ -146,7 +214,7 @@ section#accommodations > div {
     section#activities  #activities-grid .activity:nth-child(6) .activity-img img{   
         transform: translateY(-40px);
     }
- } 
+}
  @media screen and (max-width:375px){
     /* Images dimensions*/
     section#activities  #activities-grid .activity:nth-child(2) .activity-img img{   
