@@ -18,13 +18,17 @@ body
     font-size: 1em;
     display: flex;
     justify-content: center;
-    background-color: #f2f2f2;
+    background-color: #9c9c9c;
 }
 #page-reservia{
     max-width: 1440px;
-    padding-left: 3%;
-    padding-right: 3%;
+    
     background-color: white;
+}
+header,section{
+
+    padding-right: 3%;
+    padding-left: 3%;
 }
 a{
     text-decoration: none;
@@ -100,7 +104,7 @@ section#search p{
     font-size: 1em;
 }
 div#search-engine form{
-    display: flex;
+    display: inline-flex;
     border : 1px solid #f2f2f2;
     border-radius: 10px;
     overflow:hidden;
@@ -243,6 +247,8 @@ section#accommodations > div {
 #accommodations-grid .accommodation{
     padding: 5px;
     border-radius: 20px;
+    box-shadow: 1px 4px 28px -10px rgba(0,0,0,0.62);
+
     background-color: white; 
     display: flex;
     flex-direction: column;
@@ -299,6 +305,58 @@ section#accommodations > div {
 #accommodations-grid .accommodation:nth-child(6) .accommodation-img img{
     transform:translateY(-145px)
 }
+@media  screen and (max-width:1332px) {
+    /* Accommodations dimensions - 1332px to Tablet */
+    
+    #accommodations-grid .accommodation:nth-child(2) .accommodation-img img{
+        transform:translateY(-38px)
+    }
+    #accommodations-grid .accommodation:nth-child(4) .accommodation-img img{
+        transform:translateY(-97px)
+    }
+
+    #accommodations-grid .accommodation:nth-child(6) .accommodation-img img{
+        transform:translateY(-200px)
+    }
+}
+@media  screen and (max-width:1042px) {
+    /* Accommodations dimensions - 1042px to Tablet */
+    
+    #accommodations-grid .accommodation:nth-child(2) .accommodation-img img{
+        transform:translateY(-110px)
+    }
+    #accommodations-grid .accommodation:nth-child(3) .accommodation-img img{
+        transform:translateY(-110px)
+    }
+    #accommodations-grid .accommodation:nth-child(4) .accommodation-img img{
+        transform:translateY(-170px)
+    }
+    #accommodations-grid .accommodation:nth-child(5) .accommodation-img img{
+        transform:translateY(-80px)
+    }
+    #accommodations-grid .accommodation:nth-child(6) .accommodation-img img{
+        transform:translateY(-280px)
+    }
+}
+@media  screen and (max-width:910px) {
+    /* Accommodations dimensions - 910px to Tablet */
+    
+    #accommodations-grid .accommodation:nth-child(2) .accommodation-img img{
+        transform:translateY(-40px)
+    }
+    #accommodations-grid .accommodation:nth-child(3) .accommodation-img img{
+        transform:translateY(-20px)
+    }
+    #accommodations-grid .accommodation:nth-child(4) .accommodation-img img{
+        transform:translateY(-85px)
+    }
+    #accommodations-grid .accommodation:nth-child(5) .accommodation-img img{
+        transform:translateY(0px)
+    }
+    #accommodations-grid .accommodation:nth-child(6) .accommodation-img img{
+        transform:translateY(-185px)
+    }
+}
 
         /*Afficher Plus*/
 #accommodations h2:hover a{
@@ -326,6 +384,7 @@ section#accommodations > div {
 #pop-accommodations-grid .pop-accommodation {
     padding: 5px;
     border-radius: 20px;
+    box-shadow: 1px 4px 28px -10px rgba(0,0,0,0.62);
     background-color: white; 
     display: flex;
     flex-direction: raw;
@@ -360,7 +419,7 @@ section#accommodations > div {
     width: 60%;
     height: 120px;
 }
-#pop-accommodations-grid .pop-accommodation:nth-child(3) .pop-accommodation-img img{
+#pop-accommodations-grid .pop-accommodation .pop-accommodation-img img{
     object-fit: cover;
     width: 100%;
 }
@@ -377,6 +436,9 @@ section#accommodations > div {
 /* :nth-child (1)Vieux Port (2)Fort de Pomègues (3)Parc Nat Calanques 
 (4)ND de la Garde (5)Iles du Frioul (6)Parc Longchamp*/
 
+section#activities{
+    margin-bottom: 40px;
+}
 section#activities #activities-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -387,6 +449,7 @@ section#activities #activities-grid{
 section#activities #activities-grid .activity{
     border: 1px solid #f2f2f2;
     border-radius: 20px; 
+    box-shadow: 1px 4px 28px -10px rgba(0,0,0,0.62);
     display: flex;
     flex-direction: column;
     overflow:hidden;
@@ -406,7 +469,8 @@ section#activities  #activities-grid .activity-img{
     justify-content: center;
 }
 section#activities  #activities-grid .activity-img img.medium-img{
-    height: 100%;   
+    height: 100%;  
+    width: 585.609px; 
 }
 section#activities  #activities-grid .activity-img img.small-img{   
     width: 100%;
@@ -509,3 +573,28 @@ section#activities  #activities-grid .activity:nth-child(6) .activity-img img{
             transform: translateY(-10px);
         }
     }
+
+/*Footer*/
+footer{
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: #f2f2f2;
+
+}
+footer #lists{
+    padding: 40px 0px 40px 0px;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+footer .list ul{
+    margin-top: 20px;
+}
+footer .list ul li{
+    line-height: 2.2;
+}
+footer .list ul li a:hover{
+    color:#0065FC;
+}
