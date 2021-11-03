@@ -23,18 +23,22 @@ section#accommodations{
     padding-right: unset;
 }
 header#mobile div#top-header ul{
-    
     display:flex;
     justify-content: space-between;
     width:100%;
     height: 50px;
 }
-header#mobile div#top-header ul li#sign_up{
+header#mobile div#top-header ul li.sign_up{
     display: flex;
     align-items: center;
     justify-content: flex-end;
     width:50%;
     height: 100%;
+}
+header#mobile #top-header ul li.sign_up a{
+    font-weight: bold;
+    color: #0065FC;
+
 }
 header#mobile nav{
     width:100%;
@@ -59,11 +63,16 @@ header#mobile nav ul li{
 header#mobile nav ul li:hover{
     box-sizing: border-box;
     border-bottom: 3px solid #0065FC;
-    
 }
 header#mobile nav ul li:hover a{
     color:#0065FC ;
     font-weight: bold;
+}
+header#mobile nav ul li a{
+    height : 100%;
+    width: 100%;
+    text-align:center;
+    line-height: 40px;
 }
 header#desktop{
     display: none;
@@ -120,10 +129,12 @@ section#accommodations {
 section#accommodations > div {
     border-radius: unset;
 }
-@media screen and (max-width:375px) /*Mobile M dimensions*/ {
+@media screen and (max-width:425px) /*Mobile L dimensions*/ {
     section#accommodations > div {
-        padding: 10px;
+        padding: 3%;
     }
+    #pop-accommodations-grid .pop-accommodation {
+        min-width: 290px;
 }
 
 #accommodations #marseille-accommodations{
@@ -133,8 +144,8 @@ section#accommodations > div {
     /*Popular accomodations goes above Marseille accommodations (see mock-up)*/
     grid-column-start: 1;
     grid-row-start: 1;
-  }
-
+}
+}
 /*Images dimension*/
 /*nth-child (1)Auberge la Cannebière (2)Hôtel du port (3)Hôtel les Mouettes 
 (4)Hôtel de la mer (5)Auberge le Panier (6)Hôtel chez Amina*/
@@ -196,28 +207,27 @@ section#accommodations > div {
     section#activities #activities-grid .activity-img{
         display: unset;
     }
-    section#activities  #activities-grid .activity:nth-child(1) .activity-img img{   
+    /* section#activities  #activities-grid .activity:nth-child(1) .activity-img img{   
         transform: translateY(-30px);
-    }    
-    section#activities  #activities-grid .activity:nth-child(2) .activity-img img{   
-        transform: translateY(-200px);
-    }
-    section#activities  #activities-grid .activity:nth-child(3) .activity-img img{   
-        transform: translateY(-20px);
-    }        
+    }     */
     section#activities  #activities-grid .activity:nth-child(4) .activity-img img{   
         transform: none;
     }
     section#activities  #activities-grid .activity:nth-child(5) .activity-img img{   
         transform: translateY(-10px);
     }
-    section#activities  #activities-grid .activity:nth-child(6) .activity-img img{   
-        transform: translateY(-40px);
-    }
+    
 }
- @media screen and (max-width:375px){
+ @media screen and (max-width:457px)/* 457px max-width related to breakpoint in which all 
+ the accommodations are set in within 1 single column*/{
     /* Images dimensions*/
     section#activities  #activities-grid .activity:nth-child(2) .activity-img img{   
-        transform: translateY(-150px);
-    }    
+        transform: translateY(-200px);
+    }
+    section#activities  #activities-grid .activity:nth-child(3) .activity-img img{   
+        transform: translateY(-20px);
+    }
+    section#activities  #activities-grid .activity:nth-child(6) .activity-img img{   
+        transform: translateY(-40px);
+    }   
  } 
