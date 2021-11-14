@@ -1,13 +1,12 @@
 # Reservia
 Reservia is the second project of the Web Developer training by OpenClassrooms.
 This project involves making the integration of a Vacation booking website called Reservia.
-You can access the page via the following link (Google Chrome only) : https://steffao.github.io/reservia/
+You can access the page via the following link : https://steffao.github.io/SteffieJeanjoseph_2_07092021/
 
-![maquette web reservia](./docs/desktop.png)
 
 ## Elements provided by the virtual company
 - Desktop & Mobile versions' mock-ups have been provided beforehand.
-- The mock-up pictures have been delivered in sm, md, l & xl format
+- The mock-up pictures have been delivered in sm, md format
 - The icons come from [Font Awesome](https://fontawesome.com/)
 - The colors used are : blue #0065FC - light blue #DEEBFF - grey #F2F2F2
 - The font used is ["Raleway"](https://fonts.google.com/specimen/Raleway)
