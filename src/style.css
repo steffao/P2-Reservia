@@ -385,7 +385,6 @@ section#accommodations > div {
 #pop-accommodations-grid{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(145px);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     /* max-height: 430px; WARNING, potential side effects on Popular*/
@@ -397,7 +396,7 @@ section#accommodations > div {
     box-shadow: 1px 4px 28px -10px rgba(0,0,0,0.62);
     background-color: white; 
     display: flex;
-    flex-direction: raw;
+    
     overflow:hidden;
     justify-content: center;
     max-height: 140px;
@@ -407,7 +406,7 @@ section#accommodations > div {
     max-height: 140px;
     min-width: 300px;
     display: flex;
-    flex-direction: raw;
+  
     overflow: hidden;
     justify-content: center;
 }
